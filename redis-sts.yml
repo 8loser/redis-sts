@@ -58,7 +58,7 @@ spec:
       - name: conf
         configMap:
           name: redis-cluster
-          defaultMode: 0755
+          defaultMode: 493
   volumeClaimTemplates:
   - metadata:
       name: data
@@ -67,4 +67,4 @@ spec:
       resources:
         requests:
           storage: 5Gi
-      storageClassName: redis-cluster
+      storageClassName: standard
